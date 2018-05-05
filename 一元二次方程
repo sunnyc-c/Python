@@ -1,0 +1,10 @@
+#一元二次方程
+print("Type a")
+a=int(input())
+print("Type b")
+b=int(input())
+print("Type c")
+c=int(input())
+root1= (-b+(b**2-4*a*c)**0.5)/2*a
+root2= (-b-(b**2-4*a*c)**0.5)/2*a
+print(root1,root2)
