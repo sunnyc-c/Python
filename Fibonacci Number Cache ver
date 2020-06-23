@@ -1,0 +1,14 @@
+cache = {}
+
+def fibnum(n):
+    if n in cache:
+        return cache[n]
+    if n <= 1: #basic base
+        value = n
+    else:
+        value = fibnum(n-1) + fibnum(n-2)
+    cache[n] = value
+    return value
+
+print('This programme is designed to find the n th term in fibonacci sequence.')
+print(fibnum(int(input('Please input n: '))))
